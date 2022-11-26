@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fbf597ca4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Static Template</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="topnav">
+      <div id="left-navbar">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://www.pngkit.com/png/full/826-8267552_classic-logo-of-9-x-m-hindi-music.png"
+            alt="logo"
+            height="48"
+          />
+        </a>
+        <a href="#favourites">
+          <span class="remove-display">Favourites</span>
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search">
+          <i class="fas fa-search font"></i>
+        </button>
+        <input
+          type="text"
+          class="input-search"
+          placeholder="Type to Search..."
+        />
+      </div>
+      <div class="remove-display">
+        <i class="far fa-bell font"></i>
+      </div>
+      <div class="right-navbar">
+        <div class="user_display"></div>
+        <div class="text-right" id="dropdown-menu">
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown-list nav-menu">
+            <ul class="no-list-style">
+              <li>
+                <a href="#myprofile"> My Profile </a>
+              </li>
+              <li>
+                <a href="#notification"> Notifications </a>
+              </li>
+              <li>
+                <a href="#favourites"> Favourites </a>
+              </li>
+              <li>
+                <a href="#settings">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main content -->
+    <section class="content-box">
+      <div class="container">
+        <div id="carousel">
+          <input type="radio" name="slider" id="item-1" checked />
+          <input type="radio" name="slider" id="item-2" />
+          <input type="radio" name="slider" id="item-3" />
+          <div class="cards">
+            <label class="card" for="item-1" id="song-1">
+              <img
+                src="https://i.ytimg.com/vi/W8a4sUabCUo/maxresdefault.jpg"
+                alt="song"
+                class="carousel_slide"
+              />
+            </label>
+            <label class="card" for="item-2" id="song-2">
+              <img
+                src="https://i.ytimg.com/vi/Dwzk-XZxZ4k/maxresdefault.jpg"
+                alt="song"
+                class="carousel_slide"
+              />
+            </label>
+            <label class="card" for="item-3" id="song-3">
+              <img
+                src="https://i.ytimg.com/vi/KFof8aaUvGY/maxresdefault.jpg"
+                alt="song"
+                class="carousel_slide"
+              />
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="home-playlists">
+        <div id="Latest-release">
+          <h3>Latest Release</h3>
+          <div>
+            <img
+              src="https://trendybeatz.com/images/Davido-Like-Dat.jpg"
+              width="100"
+            />
+            <img
+              src="https://trendybeatz.com/images/Spyro-Billing-Artwork.jpg"
+              width="100"
+            />
+            <img
+              src="https://images.genius.com/1f9ab66cb2840c1a57ddfadd04d023ef.909x909x1.jpg"
+              width="100"
+            />
+            <img
+              src="https://static.wikia.nocookie.net/justin-bieber/images/6/6b/Stuck_with_U.jpg"
+              width="100"
+            />
+            <img
+              src="https://i1.sndcdn.com/artworks-000670094410-hqllp0-t500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://images.genius.com/83f566ef0ef7295fa6fee24f09f975aa.1000x1000x1.png"
+              width="100"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Harry_Styles_-_Late_Night_Talking.png/220px-Harry_Styles_-_Late_Night_Talking.png"
+              width="100"
+            />
+            <img
+              src="https://images.genius.com/49c802ebb8ef3f12d5b8cc6063ce8b52.1000x1000x1.jpg"
+              width="100"
+            />
+            <img
+              src="https://www.umusic.ca/wp-content/uploads/2022/07/GMG_DNCE-copy-scaled.jpg"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2738854d738e53ce8a49be027d1"
+              width="100"
+            />
+          </div>
+        </div>
+        <div id="popular-artists">
+          <h3>Popular Artists</h3>
+          <div>
+            <div class="image-container">
+              <a href="TaylorS.html">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Taylor Swift</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="JustinB.html">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Justin Bieber</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="EdS.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb12a2ef08d00dd7451a6dbed6"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Ed Sheeran</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="BrunoM.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Bruno Mars</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="HarryS.html">
+                <img
+                  src="https://media.npr.org/assets/img/2020/02/27/wide-use_hpromophoto_helenepambrun-72fdb64792139d94a06f18686d0bb3131a238a70-s1100-c50.jpg"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Harry Styles</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="ShawnM.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb46e7a06fa6dfefaed6a3f0db"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Shawn Mendes</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="SelenaG.html">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1sd9A7dQd4wGu06aleoKDMGQTMs-nyzHvUw&usqp=CAU"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Selena Gomez</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="CharlieP.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb0d890ffd0e0bea5f904f1a9f"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Charlie Puth</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="AmitT.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb8862744d5827e0fbd04d61aa"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Amit Trivedi</h5>
+                </div>
+              </a>
+            </div>
+            <div class="image-container">
+              <a href="MohitC.html">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb16691117e2ba803946b203ba"
+                  width="100"
+                />
+                <div class="middle">
+                  <h5>Mohit Chauhan</h5>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="latestEng">
+          <h3>Latest English</h3>
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/5/5e/Beyonc%C3%A9_-_Break_My_Soul-en.png"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273bafcc8454289261db2fe7b03"
+              width="100"
+            />
+            <img
+              src="https://images.genius.com/411be64f542a978df3bf08f980b8580e.720x720x1.webp"
+              width="100"
+            />
+            <img
+              src="https://images.genius.com/ea053108b67f08746a587326a5b8791d.1000x1000x1.jpg"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273be4d2292041d770905f8972d"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b27345dbb36f987c184145d37a1b"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b2733ae51d6dc9ed5ffcf9988639"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/061/Harry-s-House-English-2022-20220518224913-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d00001e02a6ac979c144339c55131b472"
+              width="100"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/d/d4/Chris_Brown_%E2%80%93_Call_Me_Every_Day.png"
+              width="100"
+            />
+          </div>
+        </div>
+        <div id="latestHin">
+          <h3>Latest Hindi</h3>
+          <div>
+            <img
+              src="https://c.saavncdn.com/476/Baarishon-Mein-Hindi-2022-20220707173221-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://a10.gaanacdn.com/gn_img/albums/Oxd3xP3gVY/d3xzQ6jabg/size_l.jpg"
+              width="100"
+            />
+            <img
+              src="https://i.scdn.co/image/ab67616d0000b273c08202c50371e234d20caf62"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/104/Galliyan-Returns-From-Ek-Villain-Returns-Hindi-2022-20220704161001-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/444/Bhool-Bhulaiyaa-2-Title-Track-From-Bhool-Bhulaiyaa-2-Hindi-2022-20220502201002-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/260/Rangisari-From-Jugjugg-Jeeyo-Hindi-2022-20220606031008-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/564/Hum-Nashe-Mein-Toh-Nahin-From-Bhool-Bhulaiyaa-2-Hindi-2022-20220509141001-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/960/Jayeshbhai-Jordaar-Hindi-2022-20220425132335-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/592/KGF-Chapter-2-Hindi-2022-20220415034804-500x500.jpg"
+              width="100"
+            />
+            <img
+              src="https://c.saavncdn.com/084/Attack-Hindi-2022-20220313112514-500x500.jpg"
+              width="100"
+            />
+          </div>
+        </div>
+        <div id="music-stations">
+          <h3>Music Stations</h3>
+          <div id="genre">
+            <div
+              style="
+                background-image: url('https://www.hemsworthsbackalright.com/wp-content/uploads/2021/06/merlin_147857643_8e0c5c65-4549-4946-b51d-49425b9dcf24-articleLarge.jpg');
+                background-size: cover;
+                border: #fd65fd 5px inset;
+              "
+            >
+              <h3>Pop</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://www.localsamosa.com/wp-content/uploads/2020/06/Stocksy_txpd6b8add2bdn100_Medium_401487-5a553389eb4d52003732b41f.jpg');
+                background-size: cover;
+                border: #83ccf5 5px inset;
+              "
+            >
+              <h3>Indie</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://www.planetfitness.com/sites/default/files/feature-image/xbreak-workout_602724.jpg.pagespeed.ic.v8byD7su-e.jpg');
+                background-size: cover;
+                border: #e5a87c 5px inset;
+              "
+            >
+              <h3>Workout</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cm9jayUyMG11c2ljfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+                background-size: cover;
+                border: #39295a 5px inset;
+              "
+            >
+              <h3>Rock</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://cdn5.vectorstock.com/i/1000x1000/09/24/love-music-neon-sign-vector-23390924.jpg');
+                background-size: cover;
+                border: #7b0037 5px inset;
+              "
+            >
+              <h3>Love</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://www.magneticmag.com/.image/t_share/MTMzMDU4MzUzOTIzNTI5MTgy/best-tropical-house--chill-music-week-39.jpg');
+                background-size: cover;
+                border: #4b8b80 5px inset;
+              "
+            >
+              <h3>Chill</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://image.shutterstock.com/z/stock-vector-retro-music-compact-cassette-vintage-signage-poster-vector-1109470502.jpg');
+                background-size: cover;
+                border: #e77843 5px inset;
+              "
+            >
+              <h3>Retro</h3>
+            </div>
+            <div
+              style="
+                background-image: url('https://media.istockphoto.com/photos/african-jazz-musician-playing-the-saxophone-picture-id465732100?k=20&m=465732100&s=612x612&w=0&h=ybE66iDarLGktmFEga_gZ5xlUxPMuB7uK3GYmbgkZh0=');
+                background-size: cover;
+                border: #112860 5px inset;
+              "
+            >
+              <h3>Jazz</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Side Bar -->
+    <section id="queue">
+      <div class="heading">
+        <h3>Recently Played</h3>
+      </div>
+      <div id="recent_songs">
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMGU5YTRjMTUtZDU4Mi00NjFlLWExYTAtMjVkN2JmOTE1Y2Q2XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Perfect</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://pics.filmaffinity.com/One_Direction_Story_of_My_Life_Music_Video-821538223-large.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Story of my life</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/I/71Y5ju1CGiL._SS500_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Baarishein</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/f/fa/Best_Song_Ever_by_One_Direction.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Best Song Ever</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/2/26/One_Direction_-_Steal_My_Girl.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Steal My Girl</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/3b478dd96f6e3ecfcbf9d0af4e7653f7.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Somebody To You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i1.sndcdn.com/artworks-000206953613-jes3y8-t500x500.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Imagination</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/c31eb1147cc8b51ae36642b5e821dcdf.1000x1000x1.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>What A Time</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/5e0375a09ead0792063b2e0e0f78ada1.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>There's No Way</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images-1.listennotes.com/podcasts/dj-kolya-funk/ali-gatie-its-you-kolya-funk-AIsM2hDPSkH-g9ibnALeqxR.1400x1400.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>It's You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PlayBar -->
+    <footer>
+      <div id="songinfo">
+        <div id="playartist"></div>
+        <div id="musicinfo">
+          <div id="songname">Jashn-E-Bahaaraa</div>
+          <div id="artist">A.R. Rahman</div>
+        </div>
+      </div>
+      <div id="actions">
+        <i class="fa-regular fa-heart" id="heart"></i>
+        <i class="fa-solid fa-ban" id="cancel"></i>
+      </div>
+      <div class="player_inner__bottom">
+        <div class="playbar">
+          <div class="playbar_inner"></div>
+          <div class="playbar_left">
+            <span>0:00</span>
+          </div>
+          <div class="playbar_right">
+            <span>3:45</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="options">
+            <i class="fa fa-repeat"></i>
+          </div>
+          <div class="controls_left">
+            <i class="fa fa-step-backward"></i>
+          </div>
+          <div class="controls_middle">
+            <i class="fa fa-play-circle"></i>
+          </div>
+          <div class="controls_right">
+            <i class="fa fa-step-forward"></i>
+          </div>
+          <div class="options">
+            <i class="fa fa-random"></i>
+          </div>
+        </div>
+      </div>
+      <div id="volume_bar">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="50" id="slider" />
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

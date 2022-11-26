@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fbf597ca4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Static Template</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="topnav">
+      <div id="left-navbar">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://www.pngkit.com/png/full/826-8267552_classic-logo-of-9-x-m-hindi-music.png"
+            alt="logo"
+            height="48"
+          />
+        </a>
+        <a href="#favourites">
+          <span class="remove-display">Favourites</span>
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search">
+          <i class="fas fa-search font"></i>
+        </button>
+        <input
+          type="text"
+          class="input-search"
+          placeholder="Type to Search..."
+        />
+      </div>
+      <div class="remove-display">
+        <i class="far fa-bell font"></i>
+      </div>
+      <div class="right-navbar">
+        <div class="user_display"></div>
+        <div class="text-right" id="dropdown-menu">
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown-list nav-menu">
+            <ul class="no-list-style">
+              <li>
+                <a href="#myprofile"> My Profile </a>
+              </li>
+              <li>
+                <a href="#notification"> Notifications </a>
+              </li>
+              <li>
+                <a href="#favourites"> Favourites </a>
+              </li>
+              <li>
+                <a href="#settings">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content/Artist Section -->
+    <section class="content-box">
+      <div class="container">
+        <div id="artistpic">
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb16691117e2ba803946b203ba"
+          />
+        </div>
+        <div id="artistDesc">
+          <h1 style="margin-bottom: 0px;">Mohit Chauhan</h1>
+          <button
+            id="follow"
+            role="button"
+            style="font-size: 10px; margin: 14px 0px;"
+          >
+            Follow
+          </button>
+          <button
+            id="play-all"
+            role="button"
+            style="font-size: 10px; margin: 14px 20px;"
+          >
+            Play All
+          </button>
+          <span class="text"
+            ><br />
+            Mohit Chauhan is an Indian playback singer, known for his work in
+            Hindi films. He was a part of the Silk Route band. He has recorded
+            several songs for films and albums many different languages, and is
+            one of is one of the most prominent Indipop singers.
+          </span>
+        </div>
+      </div>
+      <div id="artist-playlists">
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/oAJbDElKnL/oAJbDElKnL/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Tum Se Hi</h3>
+            <time>5:21</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/10q3ZR1352/0q3ZzPm035/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Tamasha</h3>
+            <time>5:28</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/6Zxb2r7b9w/Zxb2RAqb9w/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Tum Ho</h3>
+            <time>5:16</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/d41WjznWPL/41Wjq773PL/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Saans</h3>
+            <time>5:26</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/qaLKY623pO/qaLKYgwWpO/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Tujhe Bhula Diya</h3>
+            <time>4:39</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://a10.gaanacdn.com/gn_img/albums/NOXWVRgWkq/OXWVA8R3kq/size_l.webp"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Tune Jo Na Kaha</h3>
+            <time>5:10</time>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Side Bar -->
+    <section id="queue" style="grid-template-rows: 50px 1fr 50px 1fr;">
+      <div class="heading">
+        <h3>Recently Played</h3>
+      </div>
+      <div id="recent_songs">
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMGU5YTRjMTUtZDU4Mi00NjFlLWExYTAtMjVkN2JmOTE1Y2Q2XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Perfect</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://pics.filmaffinity.com/One_Direction_Story_of_My_Life_Music_Video-821538223-large.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Story of my life</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/I/71Y5ju1CGiL._SS500_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Baarishein</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/f/fa/Best_Song_Ever_by_One_Direction.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Best Song Ever</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/2/26/One_Direction_-_Steal_My_Girl.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Steal My Girl</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/3b478dd96f6e3ecfcbf9d0af4e7653f7.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Somebody To You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i1.sndcdn.com/artworks-000206953613-jes3y8-t500x500.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Imagination</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/c31eb1147cc8b51ae36642b5e821dcdf.1000x1000x1.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>What A Time</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/5e0375a09ead0792063b2e0e0f78ada1.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>There's No Way</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images-1.listennotes.com/podcasts/dj-kolya-funk/ali-gatie-its-you-kolya-funk-AIsM2hDPSkH-g9ibnALeqxR.1400x1400.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>It's You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <h3>Similar Artists</h3>
+      </div>
+      <div id="similar_artists">
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab67706c0000bebbefd734180a96cec4526f9488"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Arijit Singh</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5ebcb6926f44f620555ba444fca"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Pritam</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5ebb09a31f853166e721d4d46b2"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>K.K.</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5ebb19af0ea736c6228d6eb539c"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>A.R. Rahman</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="data:image/jpeg;base64,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"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Armaan Malik</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273b3e1cbe8742664ddf26d149d"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Sunidhi Chauhan</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5ebbc959d7569618ec2af2210f5"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Sonu Nigam</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PlayBar -->
+    <footer>
+      <div id="songinfo">
+        <div id="playartist"></div>
+        <div id="musicinfo">
+          <div id="songname">Jashn-E-Bahaaraa</div>
+          <div id="artist">A.R. Rahman</div>
+        </div>
+      </div>
+      <div id="actions">
+        <i class="fa-regular fa-heart" id="heart"></i>
+        <i class="fa-solid fa-ban" id="cancel"></i>
+      </div>
+      <div class="player_inner__bottom">
+        <div class="playbar">
+          <div class="playbar_inner"></div>
+          <div class="playbar_left">
+            <span>0:00</span>
+          </div>
+          <div class="playbar_right">
+            <span>3:45</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="options">
+            <i class="fa fa-repeat"></i>
+          </div>
+          <div class="controls_left">
+            <i class="fa fa-step-backward"></i>
+          </div>
+          <div class="controls_middle">
+            <i class="fa fa-play-circle"></i>
+          </div>
+          <div class="controls_right">
+            <i class="fa fa-step-forward"></i>
+          </div>
+          <div class="options">
+            <i class="fa fa-random"></i>
+          </div>
+        </div>
+      </div>
+      <div id="volume_bar">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="50" id="slider" />
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

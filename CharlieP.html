@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fbf597ca4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Static Template</title>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="topnav">
+      <div id="left-navbar">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://www.pngkit.com/png/full/826-8267552_classic-logo-of-9-x-m-hindi-music.png"
+            alt="logo"
+            height="48"
+          />
+        </a>
+        <a href="#favourites">
+          <span class="remove-display">Favourites</span>
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search">
+          <i class="fas fa-search font"></i>
+        </button>
+        <input
+          type="text"
+          class="input-search"
+          placeholder="Type to Search..."
+        />
+      </div>
+      <div class="remove-display">
+        <i class="far fa-bell font"></i>
+      </div>
+      <div class="right-navbar">
+        <div class="user_display"></div>
+        <div class="text-right" id="dropdown-menu">
+          <div class="bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown-list nav-menu">
+            <ul class="no-list-style">
+              <li>
+                <a href="#myprofile"> My Profile </a>
+              </li>
+              <li>
+                <a href="#notification"> Notifications </a>
+              </li>
+              <li>
+                <a href="#favourites"> Favourites </a>
+              </li>
+              <li>
+                <a href="#settings">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Content/Artist Section -->
+    <section class="content-box">
+      <div class="container">
+        <div id="artistpic">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b2739d97ff5461084a1d8c0baa28"
+          />
+        </div>
+        <div id="artistDesc">
+          <h1 style="margin-bottom: 0px;">Charlie Puth</h1>
+          <button
+            id="follow"
+            role="button"
+            style="font-size: 10px; margin: 14px 0px;"
+          >
+            Follow
+          </button>
+          <button
+            id="play-all"
+            role="button"
+            style="font-size: 10px; margin: 14px 20px;"
+          >
+            Play All
+          </button>
+          <span class="text"
+            ><br />
+            Charles Otto Puth Jr. (born December 2, 1991) is an American singer,
+            songwriter, and record producer. His initial exposure came through
+            the viral success of his song videos uploaded to YouTube. Puth
+            initially signed with the record label eleveneleven after performing
+            on The Ellen DeGeneres Show, while songwriting and producing for
+            other artists. With primary intent on a solo career, Atlantic
+            Records and Artist Partner Group eventually sought the artist, and
+            he released his debut single, "Marvin Gaye" (featuring Meghan
+            Trainor), in 2015.
+          </span>
+        </div>
+      </div>
+      <div id="artist-playlists">
+        <div class="loader">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273db21a273452f0637cdbc35aa"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Attention</h3>
+            <time>5:21</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273c7c579c9b540f56584909d28"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Light Switch</h3>
+            <time>5:28</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273c3fade2af1c66ea4b002ae18"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>One Call Away</h3>
+            <time>5:16</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b2738de02872d0f01145d616ca6f"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Cheating On You</h3>
+            <time>5:26</time>
+          </div>
+        </div>
+        <div class="loader">
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b273eeb1236a7d65549de3657457"
+            width="50px"
+            height="50px"
+          />
+          <i
+            class="fa-regular fa-heart"
+            id="heart"
+            style="left: 84%; position: relative;"
+            }
+          ></i>
+          <div class="flex">
+            <h3>Girlfriend</h3>
+            <time>4:39</time>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Side Bar -->
+    <section id="queue" style="grid-template-rows: 50px 1fr 50px 1fr;">
+      <div class="heading">
+        <h3>Recently Played</h3>
+      </div>
+      <div id="recent_songs">
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BMGU5YTRjMTUtZDU4Mi00NjFlLWExYTAtMjVkN2JmOTE1Y2Q2XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Perfect</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://pics.filmaffinity.com/One_Direction_Story_of_My_Life_Music_Video-821538223-large.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Story of my life</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://m.media-amazon.com/images/I/71Y5ju1CGiL._SS500_.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Baarishein</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/f/fa/Best_Song_Ever_by_One_Direction.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Best Song Ever</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/2/26/One_Direction_-_Steal_My_Girl.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Steal My Girl</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/3b478dd96f6e3ecfcbf9d0af4e7653f7.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Somebody To You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i1.sndcdn.com/artworks-000206953613-jes3y8-t500x500.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>Imagination</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/c31eb1147cc8b51ae36642b5e821dcdf.1000x1000x1.png"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>What A Time</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.genius.com/5e0375a09ead0792063b2e0e0f78ada1.1000x1000x1.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>There's No Way</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://cdn-images-1.listennotes.com/podcasts/dj-kolya-funk/ali-gatie-its-you-kolya-funk-AIsM2hDPSkH-g9ibnALeqxR.1400x1400.jpg"
+            width="40px"
+            height="40px"
+          />
+          <div class="flex">
+            <h3>It's You</h3>
+            <time>1:09</time>
+          </div>
+        </div>
+      </div>
+      <div class="heading">
+        <h3>Similar Artists</h3>
+      </div>
+      <div id="similar_artists">
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb46e7a06fa6dfefaed6a3f0db"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Shawn Mendes</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb77bf00f67e21f514dc44c485"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>OneRepublic</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab67616d0000b2738d0a75346badc30c8b845be9"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>DNCE</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb81ae491ca457af116f7252f1"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>NEIKED</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb654972693e0efed3f3f4d090"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Jason Derulo</h3>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://i.scdn.co/image/ab6761610000e5eb31072db9da0311ecfabe96bf"
+            width="60px"
+            height="60px"
+          />
+          <div class="flex">
+            <h3>Khalid</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PlayBar -->
+    <footer>
+      <div id="songinfo">
+        <div id="playartist"></div>
+        <div id="musicinfo">
+          <div id="songname">Jashn-E-Bahaaraa</div>
+          <div id="artist">A.R. Rahman</div>
+        </div>
+      </div>
+      <div id="actions">
+        <i class="fa-regular fa-heart" id="heart"></i>
+        <i class="fa-solid fa-ban" id="cancel"></i>
+      </div>
+      <div class="player_inner__bottom">
+        <div class="playbar">
+          <div class="playbar_inner"></div>
+          <div class="playbar_left">
+            <span>0:00</span>
+          </div>
+          <div class="playbar_right">
+            <span>3:45</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="options">
+            <i class="fa fa-repeat"></i>
+          </div>
+          <div class="controls_left">
+            <i class="fa fa-step-backward"></i>
+          </div>
+          <div class="controls_middle">
+            <i class="fa fa-play-circle"></i>
+          </div>
+          <div class="controls_right">
+            <i class="fa fa-step-forward"></i>
+          </div>
+          <div class="options">
+            <i class="fa fa-random"></i>
+          </div>
+        </div>
+      </div>
+      <div id="volume_bar">
+        <i class="fa fa-volume-down"></i>
+        <input type="range" min="1" max="100" value="50" id="slider" />
+        <i class="fa fa-volume-up"></i>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
